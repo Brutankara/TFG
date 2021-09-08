@@ -15,6 +15,9 @@ Sin embargo, aún no es momento para la ejecución del script. Primero hemos de 
 
 pip install -r requirements.txt
 
+Si ocurren errores con cualquier comando pip, se recomienda usar este comando y luego, volver a ejecutar el comando en cuestión:
+python -m pip install --upgrade pip
+
 Esto nos descargará todas las librerías necesarias para la ejecución del programa. En el archivo requirements.txt se pueden ver individualmente los requisitos.
 
 3- Ejecución
@@ -46,5 +49,11 @@ Breve explicación de los parámetros:
 
 Comando de ejemplo:
 python .\detector_trayectorias.py -v media/video1.mp4 -d False -s True -tp 0.07 -y m
+
+pyyaml
+tqdm
+torch
+torchvision
+seaborn
 
 Al ejecutar el programa, si no se tiene la versión de Yolov5 descargada (se trata de un archivo llamado yolov5*.pt), el programa se encargará automáticamente de buscar y descargar la versión requerida. Ésto puede llevar unos minutos.
