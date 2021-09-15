@@ -15,6 +15,15 @@ Sin embargo, aún no es momento para la ejecución del script. Primero hemos de 
 
 pip install -r requirements.txt
 
+Si hay algún problema durante la instalación, es necesario instalar la librería requerida a mano (Usando el comando pip install *librería*). Aquí están los comandos de las librerías más propensas a fallar:
+
+pip install pyyaml
+pip install tqdm
+pip install torch
+pip install torchvision
+pip install seaborn
+
+
 Si ocurren errores con cualquier comando pip, se recomienda usar este comando y luego, volver a ejecutar el comando en cuestión:
 python -m pip install --upgrade pip
 
@@ -50,10 +59,6 @@ Breve explicación de los parámetros:
 Comando de ejemplo:
 python .\detector_trayectorias.py -v media/video1.mp4 -d False -s True -tp 0.07 -y m
 
-pyyaml
-tqdm
-torch
-torchvision
-seaborn
+
 
 Al ejecutar el programa, si no se tiene la versión de Yolov5 descargada (se trata de un archivo llamado yolov5*.pt), el programa se encargará automáticamente de buscar y descargar la versión requerida. Ésto puede llevar unos minutos.
